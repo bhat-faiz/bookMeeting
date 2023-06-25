@@ -1,0 +1,19 @@
+<section class="container">
+    <p class="noMeeting" *ngIf="bookingList.length==0">No Meetings</p>
+    <div *ngIf="bookingList.length!=0" class="meetingList">
+        <h2>{{roomName?.name}}</h2>
+        <div class="meetingCard" *ngFor="let bookings of bookingList;">
+            <div class="meetingInfo">
+                <h3>{{bookings.agenda}}</h3>
+                <h4>{{bookings.eemployeeName}} | {{bookings.employeeDept}}</h4>
+            </div>
+            <div class="meetingDate">
+                <p><b>Date:</b> {{bookings.date}}</p>
+                <p><b>Time Duration:</b> {{bookings.startTime}} - {{bookings.endTime}}</p>
+            </div>
+            <div class="deleteBtn">
+                <button (click)="deleteBooking(bookings.id)">Delete</button>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,11 @@
+<section class="container">
+    <div class="cardList">
+        <div class="cards" *ngFor="let rooms of roomData;">
+            <h1>{{rooms.name}}</h1>
+            <h2>{{rooms?.employeeName}}</h2>
+            <h3>{{rooms?.employeeDept}}</h3>
+            <p>{{rooms.status}}</p>
+            <a [routerLink]="['/meeting-list',rooms.id]" >View Meetings</a>
+        </div> 
+    </div>
+</section>

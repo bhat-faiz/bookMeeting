@@ -1,0 +1,43 @@
+.meetingList h2{
+    margin-top: 30px;
+    color: #01c796;
+    font-size: 28px;
+}
+.meetingCard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    box-shadow: 6px 6px 12px 3px #a3a3a3b3;
+    padding: 15px;
+    border-radius: 10px;
+}
+.meetingDate, .meetingInfo{
+    width: 45%;
+}
+.meetingInfo h4{
+    margin-top: 5px;
+}
+.meetingDate p:first-child{
+    margin-bottom: 5px;
+}
+.deleteBtn{
+    width: 10%;
+    text-align: right;
+}
+.deleteBtn button{
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #01c796;
+    padding: 10px;
+    cursor: pointer;
+}
+.noMeeting{
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 600;
+}

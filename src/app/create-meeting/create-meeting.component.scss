@@ -1,0 +1,45 @@
+form{
+    width: 50%;
+    padding-top: 30px;
+}
+form div{
+    margin-bottom: 20px;
+}
+form label{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+form input, form textarea{
+    width: -webkit-fill-available;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none;
+    padding: 5px;
+}
+form select{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none;
+    padding: 5px;
+}
+form button{
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #01c796;
+    padding: 10px;
+    cursor: pointer;
+}
+form button:disabled{
+    opacity: 0.3;
+    cursor: not-allowed;
+}

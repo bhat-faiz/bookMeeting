@@ -1,0 +1,62 @@
+<section class="container">
+    <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" >
+ 
+        <div>
+          <label for="userNameId">Name</label>
+          <select name="userNameId" id="userNameId" ngModel required>
+            <option selected hidden></option>
+            <option [ngValue]="employee.id" *ngFor="let employee of allEmployees">
+              {{employee.name}}
+            </option>
+          </select>
+        </div>
+       
+        <div>
+          <label for="meetingRoomId">Meeting Room</label>
+          <select name="meetingRoomId" id="meetingRoomId" ngModel required>
+            <option selected hidden></option>
+            <option [ngValue]="room.id" *ngFor="let room of allRoom">
+              {{room.name}}
+            </option>
+          </select>
+        </div>
+       
+        <div>
+          <label for="date">Date </label>
+          <input type="date" name="date" ngModel [min]="minDate" (change)="getTimeSlots($event)" required>
+        </div>
+       
+        <div>
+          <label for="startTime">Start Time</label>
+          <select name="startTime" id="startTime" ngModel required>
+            <option selected hidden></option>
+            <option [ngValue]="time" *ngFor="let time of timeSlots">
+              {{time}}
+            </option>
+          </select>
+        </div>
+
+        <div>
+            <label for="duration">Duration</label>
+            <select name="duration" id="duration" ngModel required>
+              <option selected hidden></option>
+              <option value="30">00:30</option>
+              <option value="60">01:00</option>
+              <option value="90">01:30</option>
+              <option value="120">02:00</option>
+              <option value="180">02:30</option>
+              <option value="240">03:00</option>
+            </select>
+          </div>
+       
+        <div>
+          <label for="agenda">Agenda</label>
+          <textarea name="agenda" ngModel rows="4" cols="50" required></textarea>
+        </div>
+       
+        <div>
+          <button type="submit" [disabled]="!contactForm.valid">Submit</button>
+        </div>
+        
+      </form>
+</section>

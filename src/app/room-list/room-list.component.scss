@@ -1,0 +1,21 @@
+.cardList{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cards{
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 6px 6px 12px 3px #a3a3a3b3;
+    margin-top: 30px;
+    width: 15%;
+    min-height: 150px;
+}
+.cards h2, .cards p{
+    margin: 10px 0;
+}
+.cards a{
+    color: #01c796;
+    text-transform: uppercase;
+}
