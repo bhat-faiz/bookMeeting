@@ -1,0 +1,83 @@
+{
+  "employees": [
+    {
+      "name": "Jhon Doe",
+      "department": "Engineering",
+      "id": "001"
+    },
+    {
+      "name": "Neil Irani",
+      "department": "IT",
+      "id": "002"
+    },
+    {
+      "name": "Tom Hanks",
+      "department": "HR",
+      "id": "003"
+    },
+    {
+      "name": "Christian Bale",
+      "department": "Admin",
+      "id": "004"
+    }
+  ],
+  "meetingRooms": [
+    {
+      "id": "1",
+      "name": "George Town"
+    },
+    {
+      "id": "2",
+      "name": "Hague"
+    },
+    {
+      "id": "3",
+      "name": "Dublin"
+    },
+    {
+      "id": "4",
+      "name": "Dayton"
+    },
+    {
+      "id": "5",
+      "name": "Hong Kong"
+    },
+    {
+      "id": "6",
+      "name": "Free Town"
+    },
+    {
+      "id": "7",
+      "name": "Harare"
+    },
+    {
+      "id": "8",
+      "name": "Derby"
+    },
+    {
+      "id": "9",
+      "name": "Ankara"
+    },
+    {
+      "id": "10",
+      "name": "Delhi"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "1",
+      "agenda": "Todays Agenda",
+      "employee_id": "003",
+      "room_id": "1",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "date": "25-06-2023"
+    }
+  ],
+  "setting": {
+    "startTime": "09:00",
+    "endTime": "18:00",
+    "minTimeSlot": "30",
+    "minTimeSlotUnit": "minutes"
+  }
+}
